@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  /* padding: 20px; */
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  background-color: #ffffff;
+  /* background-image: url(../images/jag.jpg); */
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: flex-end; /* Align navigation links to the right */
+}
+
+.nav-link-item {
+  padding-right: 20px; /* Adjust padding between navigation links */
+}
+
+.nav-link-text {
+  color: #000000;
+  font-weight: bold;
+}
+
+.site-title {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
+  margin: 1rem 0; /* Adjust margin */
+}
+
+/* Footer styles */
+.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Lustria";
+  src: url("../Fonts/Lustria/Lustria-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poiret-One";
+  src: url("../Fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
