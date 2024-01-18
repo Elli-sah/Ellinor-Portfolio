@@ -105,7 +105,7 @@ const AboutPage = () => {
           </div>
           <div className="w-1/2">
             <GatsbyImage
-              className=" w-full h-full object-cover"
+              className=" w-full object-fit"
               image={image}
               alt={introductionData.title}
             />

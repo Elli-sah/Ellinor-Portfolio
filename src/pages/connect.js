@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-// import PlaceholderImage from "../path/to/placeholder-image";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const ConnectPage = ({ data }) => {

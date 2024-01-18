@@ -40,22 +40,22 @@ const Header = () => {
           <h1
             data-aos="zoom-in"
             data-aos-duration="2000"
-            className="mb-4 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  bg-clip-text text-transparent bg-gradient-to-r from-green-300 via-green-500 to-green-700"
+            className="mb-4 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl  bg-clip-text text-transparent flex flex-wrap"
           ></h1>
           <h2 className="text-lg text-gray-500 mb-20"></h2>
         </div>
         <div className=" flex justify-center items-center">
           <div className="w-1/2 flex justify-center items-center flex-col ">
             <h3
-              style={{ fontFamily: "Lustria", width: "30rem" }}
-              className="font-Lustria mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-7xl"
+              style={{ fontFamily: "Lustria", width: "40rem" }}
+              className="font-Lustria mb-4 mr-20 text-center text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-7xl"
               data-aos="zoom-in"
               data-aos-duration="2000"
               data-aos-once="true"
             >
               {introductionData.title}
             </h3>
-            <h4 className="text-lg text-center w-1/2 text-gray mb-9">
+            <h4 className="text-lg mr-20 text-center w-1/2 text-gray mb-9">
               {documentToReactComponents(
                 JSON.parse(introductionData.description.raw)
               )}
@@ -65,7 +65,7 @@ const Header = () => {
                 JSON.parse(introductionData.description.raw)
               )}
             </p> */}
-            <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
+            <div className="flex mr-20 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
               <button
                 type="button"
                 className="text-white bg-blue-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-700 dark:hover:bg-orange-800 dark:focus:ring-orange-800"
@@ -105,7 +105,7 @@ const Header = () => {
               image={image}
               alt={introductionData.title}
             />
-            <p style={{ fontFamily: "Poiret-One" }}>
+            <p style={{ fontFamily: "Poiret-One", fontSize: "2rem" }}>
               {introductionData.subtitle}
             </p>
           </div>

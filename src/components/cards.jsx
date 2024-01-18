@@ -37,7 +37,7 @@ const ProjectCard = ({ projects, limit, showDescriptions, category }) => {
       : projectsToDisplay.filter((project) => project.category === category);
 
   return (
-    <div className="m-4 mt-0 p-6 flex flex-row gap-3 flex-wrap justify-center">
+    <div className="m-2 mt-0 pt-10 flex flex-row flex-wrap justify-center ">
       {filteredProjects.map((project) => (
         <Link to={`/${project.slug}`} key={project.id}>
           <div
