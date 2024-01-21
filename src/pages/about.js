@@ -83,7 +83,7 @@ const AboutPage = () => {
   const imageEx = getImage(experienceInfo.image);
 
   return (
-    <Layout pageTitle="Connect">
+    <Layout pageTitle="About">
       <main className="bg-gray-100 py-16 px-4 min-h-screen ">
         <div className="flex flex-row">
           <div className="w-1/2 flex justify-center">

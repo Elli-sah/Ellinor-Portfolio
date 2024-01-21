@@ -20,7 +20,7 @@ const WorkPage = ({ data }) => {
 
   return (
     <main className={pageStyles}>
-      <Layout>
+      <Layout pageTitle="Projects">
         <div className="flex justify-center">
           <h1 style={{ fontFamily: "Lustria", fontSize: "60px" }}>Projects</h1>
         </div>

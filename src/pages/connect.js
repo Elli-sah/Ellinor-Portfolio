@@ -12,7 +12,7 @@ const ConnectPage = ({ data }) => {
   const image = getImage(contactInfo.image);
 
   return (
-    <Layout pageTitle="Connect">
+    <Layout pageTitle="Contact">
       <main className="bg-gray-100 py-16 px-4 min-h-screen flex">
         <div className="w-1/2 h-full">
           <GatsbyImage
@@ -28,10 +28,7 @@ const ConnectPage = ({ data }) => {
           >
             Connect with Me
           </h1>
-          <p>
-            If you have any questions or just want to say hi, feel free to
-            connect with me!
-          </p>
+          <p>{contactInfo.contactText.contactText}</p>
           <div className="mt-4 flex flex-col justify-center items-center text-center">
             <ul className="mt-4  ">
               <li
@@ -63,7 +60,7 @@ const ConnectPage = ({ data }) => {
                   rel="noopener noreferrer"
                   className="hover:text-orange-500 hover:underline flex items-center"
                 >
-                  <FaGithub className="mr-2" /> Visit my GitHub page here!
+                  <FaGithub className="mr-2" /> {contactInfo.githubText}
                 </a>
               </li>
               <li
@@ -80,7 +77,7 @@ const ConnectPage = ({ data }) => {
                   rel="noopener noreferrer"
                   className="hover:text-orange-500 hover:underline flex items-center"
                 >
-                  <FaLinkedin className="mr-2" /> Visit my LinkedIn page here!
+                  <FaLinkedin className="mr-2" /> {contactInfo.linkedInText}
                 </a>
               </li>
             </ul>
@@ -100,11 +97,15 @@ export const query = graphql`
         id
         slug
         title
-
+        contactText {
+          contactText
+        }
         email
         adress
         phone
+        githubText
         github
+        linkedInText
         linkedIn
         image {
           gatsbyImageData(width: 400)
